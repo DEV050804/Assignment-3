@@ -1,0 +1,235 @@
+body {
+    font-family : 'Acme', sans-serif;
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    background-color : #f0ecec;
+    }
+    .background-container {
+    background-image : url("./BG-img/pic-3.png");
+    background-size : cover;
+    background-position : center;
+    background-repeat : no-repeat;
+    }
+    header {
+    background-color : rgb(255, 0, 0);
+    text-align : center;
+    padding : 20px;
+    }
+
+    .heading {
+        grid-column-start : 1;
+        grid-column-end : 2;
+        margin-left : 10px;
+        font-family : 'Berkshire Swash', cursive;
+        font-size : 70px;
+        font-weight : 800;
+        background : linear-gradient(45deg, #ECDC94, #4F1200);
+        background-size : 200%;
+        background-clip : text;
+        text-align : center;
+       
+    }
+
+    .navbar {
+    display : grid;
+    grid-template-columns : repeat(4,auto);
+    gap : 60px;
+    justify-content : center;
+    padding : 10px 0;
+    list-style : none;
+    }
+    .navbar li {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    }
+    .navbar a {
+    font-family : 'Libre Bodoni', serif;
+    color : white;
+    font-size : 30px;
+    font-weight : bolder;
+    transition : all 0.55s ease;
+    text-decoration : none;
+    }
+    .navbar a:hover {
+    background : #ECDC94;
+    border-radius : 20px;
+    padding : 10px 6px;
+    }
+    .candy-info img {
+    max-width : 100%;
+    height : auto;
+    margin-bottom : 20px;
+    }
+    h2 {
+    font-family : 'Spirax', cursive;
+    font-size : 24px;
+    color : #d9fa06;
+    margin-bottom : 15px;
+    text-align : center;
+    background-color : rgb(234, 233, 230, 0.5);
+    }
+    .content {
+    max-width : 800px;
+    margin : 0 auto;
+    padding : 20px;
+    }
+    .candy-info {
+    text-align : center;
+    font-family : 'Berkshire Swash', cursive;
+    background-color : #f8f8f861;
+    border : #ddd solid 1px;
+    padding : 15px;
+    margin-top : 20px;
+    border-radius : 8px;
+    box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
+    }
+    .candy-info p {
+    font-size : 18px;
+    line-height : 1.6;
+    color : rgb(10, 11, 11, 0.914);
+    margin-bottom : 10px;
+    }
+    .candy-info:hover {
+    transform : scale(1.02);
+    transition : transform 0.3s ease;
+    }
+    .facts {
+    padding : 20px;
+    }
+    .history.fact {
+    background-color : #f8f8f861;
+    border : #ddd solid 1px;
+    padding : 15px;
+    margin-bottom : 20px;
+    border-radius : 8px;
+    box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
+    }
+    .history.fact p {
+    font-size : 18px;
+    line-height : 1.6;
+    color : rgb(10, 11, 11, 0.914);
+    margin-bottom : 10px;
+    }
+    .history.fact:hover {
+    transform : scale(1.02);
+    transition : transform 0.3s ease;
+    }
+    @media screen and (max-width: 768px) {
+    .history.fact {
+    padding : 10px;
+    }
+    .history.fact p {
+    font-size : 16px;
+    }
+    }
+    .nutrition {
+    background-color : #f8f8f861;
+    padding : 40px 20px;
+    text-align : center;
+    }
+    .nutrition > div {
+    max-width : 800px;
+    margin : 0 auto;
+    }
+    .nutrition p {
+    font-size : 18px;
+    line-height : 1.6;
+    color : rgb(10, 11, 11, 0.914);
+    margin-bottom : 20px;
+    }
+    .nutrition img {
+    max-width : 100%;
+    height : auto;
+    margin-bottom : 20px;
+    border-radius : 8px;
+    box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
+    }
+    .nutrition-info {
+    background-color : #fff;
+    border : #ddd solid 1px;
+    padding : 20px;
+    border-radius : 8px;
+    box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
+    }
+    .nutrition-info h2 {
+    font-family : 'Spirax', cursive;
+    font-size : 24px;
+    color : #333;
+    margin-bottom : 15px;
+    }
+    .nutrition-info ul {
+    list-style-type : none;
+    padding : 0;
+    text-align : left;
+    }
+    .nutrition-info ul li {
+    font-size : 16px;
+    margin-bottom : 8px;
+    }
+    .nutrition-info ul li strong {
+    color : #ECDC94;
+    }
+    .nutrition-info p {
+    font-size : 16px;
+    color : #333;
+    margin-top : 20px;
+    }
+    @media screen and (max-width: 768px) {
+    .nutrition p {
+    font-size : 16px;
+    }
+    .nutrition-info {
+    padding : 15px;
+    }
+    .nutrition-info ul li {
+    font-size : 14px;
+    }
+    .nutrition-info h2 {
+    font-size : 20px;
+    }
+    }
+    .footer {
+    background-color : #4F1200;
+    color : #fff;
+    text-align : center;
+    padding : 20px;
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+    }
+    .footer-logo {
+    flex : 0 0 auto;
+    margin-right : 20px;
+    }
+    .footer-logo img {
+    width : 150px;
+    height : auto;
+    border-radius : 50%;
+    box-shadow : 0 0 10px rgb(0, 0, 0, 0.1);
+    }
+    .footer-info, .footer-form {
+    flex : 1;
+    }
+    .footer-info p {
+    margin : 5px 0;
+    }
+    .footer-form {
+    text-align : left;
+    }
+    .footer-form input, .footer-form textarea, .footer-form button {
+    margin : 5px 0;
+    padding : 10px;
+    width : 100%;
+    }
+    .footer-form button {
+    background-color : #ffcc00;
+    color : #333;
+    border : none;
+    cursor : pointer;
+    }
+    .footer-form button:hover {
+    background-color : #fff;
+    color : #333;
+    }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&M's Delight</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Berkshire+Swash&family=Spirax&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-container">
+        <!-- Header Section -->
+        <header>
+            <h1 class="heading">M&M's Delight</h1>
+            <!-- Navigation Bar -->
+            <ul class="navbar">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#facts">Facts</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </header>
+
+        <!-- Main Content Section -->
+        <section id="Home" class="Home">
+            <h2>Home</h2>
+            <div class="candy-info">
+                <img src="./img/pic-2.png" alt="M&M's">
+                <p>M&M's are colorful button-shaped chocolates, each coated with a hard candy shell. They are produced in various colors and have become popular worldwide as a snack and in baking.</p>
+                <p>In 1911, Frank C. Mars founded Mars Incorporated, a small confectionery business in Tacoma, Washington. When it came time for Frank to retire, he groomed his son to take his place, provided he spends some time overseas to learn how to start his own business.</p>
+            </div>
+        </section>
+
+        <section id="facts" class="facts">
+            <h2 class="h2">Facts</h2>
+            <div class="history fact">
+                <p>Anyone who considers themselves any kind of candy connoisseur has heard the phrase before and most likely indulged in the candy it’s describing. Since being released to the masses in the 1940s, M&M’s have been a staple of the candy lovers' diet.</p>
+            </div>
+        </section>
+
+        <section id="nutrition" class="nutrition">
+            <h2>Nutrition</h2>
+            <div>
+                <p>Indulge in the delightful taste of M&M’s with our gluten-free options. Our commitment to quality ensures a lip-smacking experience for all candy enthusiasts.</p>
+                <img src="./img/pic-3.png" alt="M&M's">
+                <div class="nutrition-info">
+                    <h2>Nutritional Information</h2>
+                    <ul>
+                        <li><strong>Energy:</strong> 2013 kJ / 480 kcal</li>
+                        <li><strong>Fat:</strong> 19.0g</li>
+                        <li><strong>Saturates:</strong> 12.0g</li>
+                        <li><strong>Carbohydrate:</strong> 70.0g</li>
+                        <li><strong>Sugars:</strong> 66.0g</li>
+                        <li><strong>Protein:</strong> 5.1g</li>
+                        <li><strong>Salt:</strong> 0.13g</li>
+                    </ul>
+                    <p>Milk chocolate (68%) in a sugar shell.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer id="contact" class="footer">
+            <!-- Company Logo -->
+            <div class="footer-logo">
+                <img src="./img/logo.png" alt="Company Logo">
+            </div>
+
+            <!-- Company Info -->
+            <div class="footer-info">
+                <p>M&M's Delight Co.</p>
+                <p>Address: 123 Candy Lane, Sweetville</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@mmsdelight.com</p>
+            </div>
+
+            <div class="footer-form">
+                <h3>Contact Us</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" name="name" required>
+                    <input type="email" placeholder="Your Email" name="email" required>
+                    <textarea placeholder="Your Message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </footer>
+    </div>
+
+    <!-- js script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('a[href^="#"]');
+
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - 50,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
